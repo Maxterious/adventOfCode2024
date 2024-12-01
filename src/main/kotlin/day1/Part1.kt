@@ -5,9 +5,7 @@ class Part1(private val input: List<String>) {
     private val listTwo = mutableListOf<Int>()
 
     fun calculateDistanceSum(): Int {
-        input.forEach {
-            splitStringIntoNumbers(it)
-        }
+        input.forEach { splitStringIntoNumbers(it) }
 
         listOne.sort()
         listTwo.sort()
